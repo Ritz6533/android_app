@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AS1</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="password">password</string>
+    <string name="rpassword">Re-password</string>
+    <string name="username">username</string>
+</resources>
