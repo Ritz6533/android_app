@@ -121,7 +121,7 @@ public class NotesView extends AppCompatActivity {
                         outputStream.close();
                         Toast.makeText(getApplicationContext(), "Note Saved", Toast.LENGTH_SHORT).show();
                         Log.d("SAVED", "filesaved name=  " + filename);
-                        filesaved = true;
+
 
                     } catch (Exception e) {
                         e.printStackTrace();
