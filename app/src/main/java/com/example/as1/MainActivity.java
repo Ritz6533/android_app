@@ -14,19 +14,25 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnLogin, btnReg;
     private EditText username, password;
+
 //initialize database
     DbHelper DB;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         btnLogin = findViewById(R.id.btnLogin);
         username = findViewById(R.id.usernamex);
         password = findViewById(R.id.passwordx);
         btnReg = findViewById(R.id.btnReg);
+
+
         DB = new DbHelper(this);
 
+        DB.defaultUser();
 
         btnReg.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
                     if (checkuserpass == true) {
                         Toast.makeText(MainActivity.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Dashboard.class);
+                        intent.putExtra("USER_ID", user);
+                        intent.putExtra("login", true);
+                        //clear any activity infront of login ex. register so that it cannot come back from dashboard on back click
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        Log.d("user id is passed", "the user id is "+ user);
+
                         startActivity(intent);
                     } else {
                         Toast.makeText(MainActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
@@ -61,4 +73,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
 }

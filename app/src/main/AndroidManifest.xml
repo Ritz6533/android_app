@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,15 +15,49 @@
         android:theme="@style/Theme.AS1"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
+            android:name=".NotesView"
+            android:label="Notes"
             android:exported="false" />
         <activity
+            android:name=".QuizScoreBoard"
+            android:exported="false"
+            android:label="Score Board" />
+        <activity
+            android:name=".QuizScore"
+            android:exported="false"
+            android:label="Quiz Score" />
+        <activity
+            android:name=".LearnLanguage"
+            android:exported="false"
+            android:label="Learn Language" />
+        <activity
+            android:name=".Quiz"
+            android:exported="false"
+            android:label="Quiz" />
+        <activity
+            android:name=".Dice"
+            android:exported="false"
+            android:label="Dice" />
+        <activity
+            android:name=".Calculator"
+            android:exported="false"
+            android:label="Calculator" />
+        <activity
+            android:name=".Notes"
+            android:exported="false"
+            android:label="Notes" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:label="Dashboard" />
+        <activity
             android:name=".Register"
-            android:exported="false" />
+            android:exported="false"
+            android:label="App- Register" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="MultiApp">
+            android:label="App- Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

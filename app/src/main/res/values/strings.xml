@@ -5,4 +5,27 @@
     <string name="password">password</string>
     <string name="rpassword">Re-password</string>
     <string name="username">username</string>
+    <string name="dash">Welcome ADMIN</string>
+    <string name="desc">Welcome To The Student MULTI APP. Here you can use various types of tools and application to help with your student life.</string>
+    <string name="dice">CLICK The dice and roll it!! Maybe you get lucky and get 6 </string>
+    <string name="diceinf">Click the dice and get your score </string>
+    <string name="submit">Submit</string>
+    <string name="save">SAVE</string>
+    <string name="view">VIEW</string>
+    <string name="exit">EXIT</string>
+    <string name="quizex">You can save the recent score or view the saved score.</string>
+    <string name="title_activity_quiz_result_board">QuizResultBoard</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="scorelist">Score List</string>
+    <string name="delete">DELETE</string>
+    <string name="back">BACK</string>
+    <string name="notepad">MY NOTEPAD</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
 </resources>

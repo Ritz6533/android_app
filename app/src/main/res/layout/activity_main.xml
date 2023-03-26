@@ -20,11 +20,12 @@
             android:id="@+id/imageLogo"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:layout_marginStart="88dp"
             android:layout_marginTop="60dp"
             android:contentDescription="logo"
             android:outlineProvider="none"
+            android:scaleType="centerCrop"
             android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logobk"
@@ -34,12 +35,12 @@
             android:id="@+id/usernamex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
             android:layout_marginTop="60dp"
             android:ems="10"
             android:hint="@string/username"
             android:inputType="textPersonName"
             android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
 
@@ -47,13 +48,13 @@
             android:id="@+id/passwordx"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
 
             android:layout_marginTop="12dp"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/usernamex" />
 
@@ -61,9 +62,9 @@
             android:id="@+id/btnLogin"
             android:layout_width="107dp"
             android:layout_height="48dp"
-            android:layout_marginStart="140dp"
             android:layout_marginTop="40dp"
             android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordx" />
 
@@ -71,9 +72,9 @@
             android:id="@+id/btnReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
             android:layout_marginTop="10dp"
             android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 

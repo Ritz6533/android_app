@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Register extends AppCompatActivity {
+public class Register extends AppCompatActivity  {
     private Button newbtnLogin, newbtnReg;
     private EditText newusername, newpassword, newrepassword;
     //initialize database
